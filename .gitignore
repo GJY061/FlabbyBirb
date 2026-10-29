@@ -1,0 +1,39 @@
+# Dependencies and generated output
+node_modules/
+dist/
+dist-ssr/
+coverage/
+tmp/
+output/
+
+# Logs and machine-local files
+logs/
+*.log
+*.local
+.DS_Store
+Thumbs.db
+*Zone.Identifier
+
+# Environment files (a documented example may be committed)
+.env
+.env.*
+!.env.example
+
+# Editor and IDE settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Private preparation material and reports
+INTERVIEW_PREP.md
+reports/
+*.pdf
+
+# External build artifacts
+assets/build/
+assets/dist/
+assets/Linux/

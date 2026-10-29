@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="A browser game with reactive physics, timed obstacles, scoring, and lives." />
+        <link rel="icon" type="image/svg+xml" href="./assets/bird.svg" />
+        <title>FlabbyBirb</title>
+    </head>
+    <body>
+        <h1>FlabbyBirb</h1>
+        <main id="main" class="flex col">
+            <svg id="svgCanvas" width="600" height="400">
+                <g id="gameOver" visibility="hidden">
+                    <rect
+                        x="225"
+                        y="176"
+                        fill="white"
+                        height="48"
+                        width="150"
+                    ></rect>
+                    <text x="235" y="206">Game Over</text>
+                </g>
+                    <g id="gameWin" visibility="hidden">
+                    <rect
+                        x="225"
+                        y="176"
+                        fill="white"
+                        height="48"
+                        width="150"
+                    ></rect>
+                    <text x="235" y="206">Game Win!</text>
+                </g>
+
+            </svg>
+            <div id="sideBar" class="flex col">
+                <div id="info" class="flex col">
+                    <div class="text">
+                        <span class="left">Lives: </span>
+                        <span class="right" id="livesText">...</span>
+                    </div>
+                    <div class="text">
+                        <span class="left">Score: </span>
+                        <span class="right" id="scoreText">...</span>
+                    </div>
+                </div>
+            </div>
+            <h2>Press Space to Start, R to Restart</h2>
+        </main>
+        <script type="module" src="./src/main.ts"></script>
+    </body>
+</html>
